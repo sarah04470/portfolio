@@ -1,13 +1,21 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styled from '@emotion/styled';
+import Layout from '../components/layout';
 
-
-export default function Home() {
-  return (
+const Portfolio = () => {
+  return(
     <>
-      <main>
-        Hello World!
-      </main>
+      <Layout>
+        <Div>
+          {/* layout */}
+        </Div>
+
+      </Layout>
     </>
-  )
+  );
 }
+
+export default Portfolio;
+
+const Div = styled.div`
+  display: flex;
+`;
