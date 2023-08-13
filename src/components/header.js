@@ -1,7 +1,5 @@
-import { HeaderWrap } from "@styles/header.style";
+import { HeaderWrap } from "../styles/common/header.styles";
 
-
- impo
 
 const Header = () => {
     return(
