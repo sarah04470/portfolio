@@ -1,4 +1,4 @@
-import { HeaderWrap } from "@styles/header.styles";
+import { HeaderWrap } from "@styles/header.style";
 
 
  impo

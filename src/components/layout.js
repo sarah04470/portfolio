@@ -1,4 +1,3 @@
-// import Gnb from "./gnb";
 import styled from "@emotion/styled";
 import Container from "./container.js"
 

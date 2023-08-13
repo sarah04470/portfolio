@@ -21,8 +21,21 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "craco-alias": "^3.0.1",
     "tsconfig-paths-webpack-plugin": "^4.1.0"
   },
-  "repository": "https://github.com/sarah04470/portfolio.git"
+  "repository": "https://github.com/sarah04470/portfolio.git",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
