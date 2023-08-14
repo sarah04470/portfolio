@@ -1,4 +1,5 @@
-@import '~styled-reset';
+/* @import '~styled-reset'; */
+/* @import '../../node_modules/styled-reset/'; */
 
 /* 웹폰트 선언 */
 @font-face {
@@ -84,6 +85,33 @@ body{ font-family: 'SF Pro Text', 'Malgun Gothic', '맑은 고딕', '돋움', Do
 .title .title-num{ font-size: 11.25rem; opacity: 20%; }
 .title .title-txt{ font-size: 6.25rem; opacity: 10%; }
 
+/* keyframe 선언 */
 
+@keyframes slideBus {
+  0% { transform: translate(0,0); /* right: -300px; top: -230px; */ }
+  25% { transform: translate(-1000px, 580px); /* right: 600px; top: 300px; */ }
+  50% { transform: translate(-740px, 430px); /* right: 360px; top: 160px; */ }
+  100% { transform: translate(calc(-100vw - 300px), calc(100vh + 180px)); /* right: calc(100% + 10px); top: calc(100%); */ }
+}
 
-/* reset css */
+@keyframes shaking {
+  0% { transform: rotate(0deg); }
+  12.5% { transform: rotate(5deg); }
+  25% { transform: rotate(0deg); }
+  37.5% { transform: rotate(-5deg); }
+  50% { transform: rotate(0deg); }
+  62.5% { transform: rotate(5deg); }
+  75% { transform: rotate(0deg); }
+  87.5% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes filling {
+  0% { transform: scaleX(10%); }
+  100% { transform: scaleX(100%); }
+}
+
+@keyframes tabOpacity {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
