@@ -7,6 +7,9 @@ import "slick-carousel/slick/slick.css";
 
 const SectionPortfolioWrap = () => {
 
+    const [ isModalVisible, setModalVisible ] = useState(false);
+    const [ activeModalIndex, setactiveModalIndex ] = useState(0);
+
     useEffect(() => {
         // DOMContentLoaded 이벤트를 처리하는 useEffect
         document.addEventListener("DOMContentLoaded", function(){
@@ -92,48 +95,27 @@ const SectionPortfolioWrap = () => {
             });
         });
 
-        $(document).ready(function() {
-            // 각 슬라이드(.design-slick과 .dev-slick)의 li 요소를 클릭했을 때 모달창을 보여줌
-            $('.design-slick .display-list li').click(function(event) {
-                if(!$('.modal').is(":visible")) {
-                    // 클릭한 li 요소의 인덱스를 가져옴 (0부터 시작)
-                    var index = $(this).index() ;
-                    $('.design-modal' + index).show();
-                    // 모달창이 떴을 때 바디 스크롤 막음
-                    $('body').css('overflow', 'hidden');
-                    $('.modal').css('opacity', '1');
-                    event.stopPropagation(); // 이벤트 버블링 차단
-                }
-            });
-
-            $('.dev-slick .display-list li').click(function(event) {
-                if(!$('.modal').is(":visible")) {
-                    // 클릭한 li 요소의 인덱스를 가져옴 (0부터 시작)
-                    var index = $(this).index() ;
-                    $('.dev-modal' + index).show();
-                    // 모달창이 떴을 때 바디 스크롤 막음
-                    $('body').css('overflow', 'hidden');
-                    $('.modal').css('opacity', '1');
-                    event.stopPropagation(); // 이벤트 버블링 차단
-                }
-            });
-
-            // 닫기 버튼을 클릭했을 때 모달창을 숨김
-            $('.modal .close-button').click(function() {
-                $(this).closest('.modal').hide();
-                // 모달창이 닫혔을 때 바디 스크롤 원래대로 복구
-                $('body').css('overflow', 'auto');
-            });
-
-            // ESC 키 다운 이벤트를 처리하여 모달창 닫기
-            $(document).keydown(function(event) {
-                if (event.key === 'Escape') {
-                    $('.modal').hide();
-                    // 모달창이 닫혔을 때 바디 스크롤 원래대로 복구
-                    $('body').css('overflow', 'auto');
-                }
-            });
+        // 클릭 이벤트 처리
+        $('.design-slick .display-list li').click(function(event) {
+            const index = $(this).index();
+            setActiveModalIndex(index);
+            setModalVisible(true);
+            $('body').css('overflow', 'hidden');
+            $('.modal').css('opacity', '1');
+            event.stopPropagation();
         });
+    
+        $('.modal .close-button').click(function() {
+            setModalVisible(false);
+            $('body').css('overflow', 'auto');
+        });
+    
+        $(document).keydown(function(event) {
+            if (event.key === 'Escape') {
+            setModalVisible(false);
+            $('body').css('overflow', 'auto');
+            }
+        });       
     }, []);
 
     const settings = {
