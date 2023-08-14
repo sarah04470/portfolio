@@ -1,4 +1,4 @@
-// import {  } from "../styles/common/.styles";
+import { SectionPortfolio } from "../styles/common/secPortfolio.styles";
 import React , { useEffect } from "react";
 import $ from 'jquery';
 import Slider from "react-slick";
@@ -142,7 +142,7 @@ const SectionPortfolioWrap = () => {
 
 
     return(
-        <section id="portfolio" className="portfolio">
+        <SectionPortfolio id="portfolio" className="portfolio">
                 <div className="title">
                     <div className="title-num">03</div>
                     <div className="title-txt">PortFolio</div>
@@ -436,7 +436,7 @@ const SectionPortfolioWrap = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </SectionPortfolio>
     )
 }
 
