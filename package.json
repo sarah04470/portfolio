@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.11.0",
     "components": "^0.1.0",
     "global": "^4.4.0",
+    "jquery": "^3.7.0",
     "next": "13.4.13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "craco-alias": "^3.0.1",
+    "slick-carousel": "^1.8.1",
     "tsconfig-paths-webpack-plugin": "^4.1.0"
   },
   "repository": "https://github.com/sarah04470/portfolio.git",
