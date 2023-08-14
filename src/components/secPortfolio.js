@@ -136,41 +136,6 @@ const SectionPortfolioWrap = () => {
         });
     }, []);
 
-    function PortfolioSection() {
-        useEffect(() => {
-          // DOMContentLoaded 이벤트를 처리하는 useEffect
-          document.addEventListener("DOMContentLoaded", function() {
-            // 탭 변경을 처리하기 위한 이벤트 리스너 추가
-            $('ul.tab-list li').click(function() {
-              // ... 탭 변경 처리 코드
-            });
-          });
-      
-          // 페이지 로드 시 slick 캐러셀 초기화
-          $('.design-slick .ipad .display-list').slick({
-            // ... 슬라이더 초기화 옵션
-          });
-      
-          // ... 다른 슬라이더 초기화
-      
-          // 클릭 이벤트 처리 등을 위한 useEffect
-          $(document).ready(function() {
-            // 각 슬라이드(.design-slick과 .dev-slick)의 li 요소를 클릭했을 때 모달창을 보여줌
-            $('.design-slick .display-list li').click(function(event) {
-              // ... 모달 관련 코드
-            });
-      
-            // ... 다른 모달 관련 코드
-      
-            // ESC 키 다운 이벤트를 처리하여 모달창 닫기
-            $(document).keydown(function(event) {
-              if (event.key === 'Escape') {
-                // ... 모달 닫기 관련 코드
-              }
-            });
-          });
-        }, []);
-
     const settings = {
 
     };
