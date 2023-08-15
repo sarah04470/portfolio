@@ -8,8 +8,9 @@ import "slick-carousel/slick/slick.css";
 const SectionPortfolioWrap = () => {
 
     const [ activeTab, setActiveTab ] = useState("tab01");
-    const [ isModalVisible, setModalVisible ] = useState(false);
+    // const [ isModalVisible, setModalVisible ] = useState(false);
     const [ activeModalIndex, setactiveModalIndex ] = useState(0);
+    const [ isModalOpen, setModalOpen ] = useState(false);
 
     useEffect(() => {
         // DOMContentLoaded 이벤트를 처리하는 useEffect
@@ -133,8 +134,102 @@ const SectionPortfolioWrap = () => {
 
     }, []);
 
-    const settings = {
+    const images = [
+        '/img/cover/design-pf-01.png',
+        '/img/cover/design-pf-02.png',
+        '/img/cover/design-pf-03.png',
+        '/img/cover/design-pf-04.png',
+        '/img/cover/design-pf-05.png',
+        '/img/cover/design-pf-06.png',
+        '/img/cover/design-pf-07.png',
+        '/img/cover/design-pf-08.png',
+        '/img/cover/design-pf-09.png',
+        '/img/mob-cover/dev-pf-01.png',
+        '/img/mob-cover/dev-pf-02.png',
+        '/img/mob-cover/dev-pf-03.png',
+        '/img/mob-cover/dev-pf-04.png',
+        '/img/mob-cover/dev-pf-05.png',
+        '/img/mob-cover/dev-pf-06.png',
+        '/img/mob-cover/dev-pf-07.png',
+        '/img/mob-cover/dev-pf-08.png',
+        '/img/mob-cover/dev-pf-09.png',
+        '/img/naver.png',
+        '/img/hyundaiCard.png',
+        '/img/ex.png',
+    ];
 
+    const modalImages = [
+        [ // design-slick 01 modal
+            '/img/modal-cont/01/design-pf-01-02.png',
+            '/img/modal-cont/01/design-pf-01-03.png',
+            '/img/modal-cont/01/design-pf-01-04.png',
+            '/img/modal-cont/01/design-pf-01-05.png',
+            '/img/modal-cont/01/design-pf-01-06.png',
+            '/img/modal-cont/01/design-pf-01-07.png',
+        ],
+        [ // design-slick 02 modal
+            '/img/modal-cont/02/design-pf-02-02.png',
+            '/img/modal-cont/02/design-pf-02-03.png',
+            '/img/modal-cont/02/design-pf-02-04.png',
+            '/img/modal-cont/02/design-pf-02-05.png',
+        ],
+        [ // design-slick 03 modal
+            '/img/modal-cont/03/design-pf-03-02.png',
+            '/img/modal-cont/03/design-pf-03-03.png',
+            '/img/modal-cont/03/design-pf-03-04.png',
+            '/img/modal-cont/03/design-pf-03-05.png',
+            '/img/modal-cont/03/design-pf-03-06.png',
+        ],
+        [ // design-slick 04 modal
+            '/img/modal-cont/04/design-pf-04-02.png',
+            '/img/modal-cont/04/design-pf-04-03.png',
+            '/img/modal-cont/04/design-pf-04-04.png',
+        ],
+        [ // design-slick 05 modal
+            '/img/modal-cont/05/design-pf-05-02.png',
+            '/img/modal-cont/05/design-pf-05-03.png',
+            '/img/modal-cont/05/design-pf-05-04.png',
+        ],
+        [ // design-slick 06 modal
+            '/img/modal-cont/06/design-pf-06-02.png',
+            '/img/modal-cont/06/design-pf-06-03.png',
+            '/img/modal-cont/06/design-pf-06-04.png',
+        ],
+        [ // design-slick 07 modal
+            '/img/modal-cont/07/design-pf-07-02.png',
+            '/img/modal-cont/07/design-pf-07-03.png',
+        ],
+        [ // design-slick 08 modal
+            '/img/modal-cont/08/design-pf-08-02.png',
+            '/img/modal-cont/08/design-pf-08-03.png',
+            '/img/modal-cont/08/design-pf-08-04.png',
+        ],
+        [ // design-slick 09 modal
+            '/img/modal-cont/09/design-pf-09-02.png',
+        ],
+        [ // dev-slick 01 modal
+            '/img/naver.png',
+        ],
+        [ // dev-slick 02 modal
+            '/img/hyundaiCard.png',
+        ],
+        [ // dev-slick 03 modal
+            '/img/ex.png',
+        ]
+
+    ]
+
+    const sliderSettings = {
+
+    };
+
+    const openModal = (index) => {
+        setactiveModalIndex(index);
+        setModalOpen(true);
+    };
+
+    const closeModal = (index) => {
+        setModalOpen(false);
     };
 
 
