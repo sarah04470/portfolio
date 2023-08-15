@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick.css";
 
 const SectionPortfolioWrap = () => {
 
-    const [ isModalVisible, setModalVisible ] = useState(false);
-    const [ activeModalIndex, setactiveModalIndex ] = useState(0);
+    // const [ isModalVisible, setModalVisible ] = useState(false);
+    // const [ activeModalIndex, setactiveModalIndex ] = useState(0);
 
     useEffect(() => {
         // DOMContentLoaded 이벤트를 처리하는 useEffect
@@ -115,7 +115,7 @@ const SectionPortfolioWrap = () => {
             setModalVisible(false);
             $('body').css('overflow', 'auto');
             }
-        });       
+        });   
     }, []);
 
     const settings = {
