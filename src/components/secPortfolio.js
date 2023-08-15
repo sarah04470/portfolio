@@ -159,8 +159,8 @@ const SectionPortfolioWrap = () => {
                                     <div className="prev">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30.573" height="60.146" viewBox="0 0 30.573 60.146">
                                             <g id="group_14307" data-name="group_14307" transform="translate(1.5 -94.427)">
-                                                <path id="path_60777" data-name="path 60777" d="M3784,3752l-18,27.96,18,28.04" transform="translate(-3766 -3655.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                                                <path id="path_60778" data-name="path 60778" d="M3784,3752l-18,27.96,18,28.04" transform="translate(-3757 -3655.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="path_60777" data-name="path 60777" d="M3784,3752l-18,27.96,18,28.04" transform="translate(-3766 -3655.5)" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
+                                                <path id="path_60778" data-name="path 60778" d="M3784,3752l-18,27.96,18,28.04" transform="translate(-3757 -3655.5)" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
                                             </g>
                                         </svg>                                      
                                     </div>
@@ -169,8 +169,8 @@ const SectionPortfolioWrap = () => {
                                     <div className="next">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30.573" height="60.146" viewBox="0 0 30.573 60.146">
                                             <g id="group_14306" data-name="group_14306" transform="translate(-1764.927 -3749.927)">
-                                                <path id="path_60777" data-name="path 60777" d="M3766,3752l18,27.96L3766,3808" transform="translate(-1990)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                                                <path id="path_60778" data-name="path 60778" d="M3766,3752l18,27.96L3766,3808" transform="translate(-1999)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="path_60777" data-name="path 60777" d="M3766,3752l18,27.96L3766,3808" transform="translate(-1990)" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
+                                                <path id="path_60778" data-name="path 60778" d="M3766,3752l18,27.96L3766,3808" transform="translate(-1999)" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
                                             </g>
                                         </svg>                                      
                                     </div>
@@ -351,8 +351,8 @@ const SectionPortfolioWrap = () => {
                                     <div className="prev">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30.573" height="60.146" viewBox="0 0 30.573 60.146">
                                             <g id="group_14307" data-name="group_14307" transform="translate(1.5 -94.427)">
-                                                <path id="path_60777" data-name="path 60777" d="M3784,3752l-18,27.96,18,28.04" transform="translate(-3766 -3655.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                                                <path id="path_60778" data-name="path 60778" d="M3784,3752l-18,27.96,18,28.04" transform="translate(-3757 -3655.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="path_60777" data-name="path 60777" d="M3784,3752l-18,27.96,18,28.04" transform="translate(-3766 -3655.5)" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
+                                                <path id="path_60778" data-name="path 60778" d="M3784,3752l-18,27.96,18,28.04" transform="translate(-3757 -3655.5)" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
                                             </g>
                                         </svg>                                      
                                     </div>
@@ -361,8 +361,8 @@ const SectionPortfolioWrap = () => {
                                     <div className="next">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30.573" height="60.146" viewBox="0 0 30.573 60.146">
                                             <g id="group_14306" data-name="group_14306" transform="translate(-1764.927 -3749.927)">
-                                                <path id="path_60777" data-name="path 60777" d="M3766,3752l18,27.96L3766,3808" transform="translate(-1990)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                                                <path id="path_60778" data-name="path 60778" d="M3766,3752l18,27.96L3766,3808" transform="translate(-1999)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                                <path id="path_60777" data-name="path 60777" d="M3766,3752l18,27.96L3766,3808" transform="translate(-1990)" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
+                                                <path id="path_60778" data-name="path 60778" d="M3766,3752l18,27.96L3766,3808" transform="translate(-1999)" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"/>
                                             </g>
                                         </svg>                                      
                                     </div>
