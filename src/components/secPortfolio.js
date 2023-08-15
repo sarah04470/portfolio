@@ -1,5 +1,5 @@
 import { SectionPortfolio } from "../styles/common/secPortfolio.styles";
-import React , { useEffect } from "react";
+import React , { useEffect, useState } from "react";
 import $ from 'jquery';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -7,8 +7,9 @@ import "slick-carousel/slick/slick.css";
 
 const SectionPortfolioWrap = () => {
 
-    // const [ isModalVisible, setModalVisible ] = useState(false);
-    // const [ activeModalIndex, setactiveModalIndex ] = useState(0);
+    const [ activeTab, setActiveTab ] = useState("tab01");
+    const [ isModalVisible, setModalVisible ] = useState(false);
+    const [ activeModalIndex, setactiveModalIndex ] = useState(0);
 
     useEffect(() => {
         // DOMContentLoaded 이벤트를 처리하는 useEffect
@@ -116,6 +117,20 @@ const SectionPortfolioWrap = () => {
             $('body').css('overflow', 'auto');
             }
         });   
+    
+        const handleTabClick = (tab) => {
+            setActiveTab(tab);
+        };
+
+        const handleModalOpen = (index) => {
+            setactiveModalIndex(index);
+            setModalVisible(true);
+        };
+        
+        const handleModalClose = () => {
+            setModalVisible(false);
+        };
+
     }, []);
 
     const settings = {

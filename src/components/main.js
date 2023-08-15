@@ -13,7 +13,7 @@ const Main = () => {
             <SectionAboutWrap/>
             <SectionSkillsWrap/>
             <SectionPortfolioWrap/>
-            <SectionContactWrap/>
+            {/* <SectionContactWrap/> */}
 
         </MainWrap>
     )
